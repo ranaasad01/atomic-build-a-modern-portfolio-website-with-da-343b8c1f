@@ -1,0 +1,409 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "cta": {
+    "home": {
+      "heading": "Construyamos algo extraordinario juntos.",
+      "body": "Ya sea que tengas una idea de producto, un desafío de ingeniería, o simplemente quieras conversar — mi bandeja de entrada siempre está abierta. Normalmente respondo en 24 horas.",
+      "button": "Ponte en contacto"
+    },
+    "projects": {
+      "heading": "¿Tienes un proyecto en mente?",
+      "body": "Estoy abierto a colaboraciones freelance, oportunidades a tiempo completo y proyectos secundarios interesantes. Si algo que has visto aquí te resuena, hablemos.",
+      "button": "Ponte en contacto"
+    },
+    "about": {
+      "heading": "Construyamos algo digno de recordar.",
+      "body": "Ya sea que tengas un proyecto en mente, un puesto que llenar, o simplemente quieras conversar — mi bandeja de entrada siempre está abierta.",
+      "button": "Ponte en contacto"
+    }
+  },
+  "about": {
+    "available": "Disponible para trabajar",
+    "bio1": "Creo experiencias digitales que combinan estética con funcionalidad, especializándome en diseño web moderno e interfaces interactivas.",
+    "bio2": "Con pasión por el código limpio y el diseño reflexivo, transformo ideas complejas en soluciones intuitivas y centradas en el usuario.",
+    "bio3": "Cuando no estoy diseñando, me encontrarás explorando nuevas tecnologías, contribuyendo a código abierto, o compartiendo conocimiento con la comunidad.",
+    "bioName": "Diseñador y Desarrollador Creativo",
+    "bioRole": "Creador Digital Full-stack",
+    "ctaBody": "Colaboremos en tu próximo proyecto y hagamos realidad tu visión.",
+    "ctaButton": "Ponte en contacto",
+    "ctaEyebrow": "¿Listo para trabajar juntos?",
+    "ctaTitle": "Creemos algo increíble",
+    "expEyebrow": "Trayectoria Profesional",
+    "expTitle": "Experiencia",
+    "eyebrow": "Acerca de mí",
+    "heroSubtitle": "Diseñador y desarrollador apasionado por crear productos digitales hermosos y funcionales.",
+    "heroTitle": "Creando experiencias digitales",
+    "skillsEyebrow": "Qué hago",
+    "skillsTitle": "Habilidades y Experiencia",
+    "statCountries": "Países",
+    "statProjects": "Proyectos completados",
+    "statYears": "Años de experiencia"
+  },
+  "hero": [
+    "Available for freelance & full-time roles",
+    "Based in San Francisco, CA · Open to remote",
+    "Scroll to explore ↓"
+  ],
+  "featured-projects": [
+    {
+      "title": "Luminary",
+      "description": "AI-powered content scheduling SaaS · Built with Next.js, Prisma & OpenAI API · Reduced editorial prep time by 60% for 200+ teams",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "PostgreSQL",
+        "OpenAI"
+      ]
+    },
+    {
+      "title": "Orbit Design System",
+      "description": "Open-source component library used by 3 startups · 80+ accessible, dark-mode-ready components",
+      "tags": [
+        "React",
+        "Storybook",
+        "Radix UI",
+        "Tailwind CSS"
+      ]
+    },
+    {
+      "title": "Pulse Analytics",
+      "description": "Real-time user behaviour dashboard for e-commerce · WebSocket-driven live charts, sub-200 ms latency",
+      "tags": [
+        "Node.js",
+        "Socket.io",
+        "D3.js",
+        "Redis"
+      ]
+    }
+  ],
+  "skills-preview": [
+    {
+      "name": "TypeScript",
+      "detail": "strongly typed, always"
+    },
+    {
+      "name": "React & Next.js",
+      "detail": "the backbone of every frontend"
+    },
+    {
+      "name": "Node.js",
+      "detail": "APIs, workers, and everything server-side"
+    },
+    {
+      "name": "PostgreSQL & Prisma",
+      "detail": "relational data done right"
+    },
+    {
+      "name": "Tailwind CSS",
+      "detail": "utility-first, pixel-perfect"
+    },
+    {
+      "name": "Docker & CI/CD",
+      "detail": "ship with confidence"
+    },
+    {
+      "name": "Figma",
+      "detail": "from wireframe to high-fidelity handoff"
+    },
+    {
+      "name": "AWS (EC2, S3, Lambda)",
+      "detail": "scalable cloud infrastructure"
+    }
+  ],
+  "projects-grid": [
+    {
+      "title": "Luminary",
+      "description": "AI-powered journaling app built with Next.js 14, OpenAI, and Supabase. Generates weekly mood insights from natural-language entries. 4.8 ★ on Product Hunt.",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "OpenAI",
+        "Supabase",
+        "Tailwind CSS"
+      ],
+      "image": "/images/luminary-ai-journaling-app.jpg"
+    },
+    {
+      "title": "Orbit Design System",
+      "description": "A component library and token system used across three SaaS products. 60+ accessible components, dark/light theming, and Storybook documentation.",
+      "tags": [
+        "React",
+        "Radix UI",
+        "Figma Tokens",
+        "Storybook",
+        "CSS Variables"
+      ],
+      "image": "/images/orbit-design-system-components.jpg"
+    },
+    {
+      "title": "Trackflow",
+      "description": "Real-time project management dashboard with drag-and-drop kanban, time tracking, and Slack integration. Reduced team stand-up time by 40% in beta.",
+      "tags": [
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "WebSockets",
+        "Vercel"
+      ],
+      "image": "/images/trackflow-kanban-dashboard.jpg"
+    },
+    {
+      "title": "Noctua",
+      "description": "A minimal, keyboard-first code editor theme and VS Code extension with 38k+ installs. Optimised for long sessions in low-light environments.",
+      "tags": [
+        "VS Code API",
+        "TypeScript",
+        "JSON Themes",
+        "Open Source"
+      ],
+      "image": "/images/noctua-vscode-theme-dark.jpg"
+    },
+    {
+      "title": "Folio CMS",
+      "description": "Headless CMS built for creative agencies, featuring a visual block editor, media CDN, and REST + GraphQL API.",
+      "tags": [
+        "Node.js",
+        "GraphQL",
+        "Prisma",
+        "AWS S3",
+        "React"
+      ],
+      "image": "/images/folio-cms-block-editor.jpg"
+    },
+    {
+      "title": "PulseMetrics",
+      "description": "SaaS analytics dashboard for indie makers. Aggregates revenue, churn, and MRR from Stripe, Paddle, and Lemon Squeezy in one view.",
+      "tags": [
+        "Next.js",
+        "Stripe API",
+        "Recharts",
+        "Prisma",
+        "Railway"
+      ],
+      "image": "/images/pulsemetrics-saas-analytics.jpg"
+    },
+    {
+      "title": "Wavelength",
+      "description": "Collaborative playlist builder with real-time sync and Spotify integration. Built in 48 hours at HackMIT 2023 — won Best UX award.",
+      "tags": [
+        "React",
+        "Spotify Web API",
+        "Firebase",
+        "Framer Motion"
+      ],
+      "image": "/images/wavelength-spotify-playlist-builder.jpg"
+    },
+    {
+      "title": "Cartographer",
+      "description": "Interactive data-viz tool for mapping open-source contribution networks across GitHub organisations.",
+      "tags": [
+        "D3.js",
+        "GitHub GraphQL API",
+        "TypeScript",
+        "Vercel Edge Functions"
+      ],
+      "image": "/images/cartographer-github-network-viz.jpg"
+    }
+  ],
+  "project-details": [
+    {
+      "title": "Luminary",
+      "subtitle": "Case Study",
+      "body": "The core challenge was making AI feel personal, not clinical. I fine-tuned prompt chains to mirror the user's own vocabulary back to them in insights, which lifted 7-day retention by 28% compared to generic summaries. The biggest technical hurdle was streaming OpenAI responses into a real-time editor without layout shift — solved with a custom ReadableStream hook and a debounced DOM patch strategy."
+    },
+    {
+      "title": "Orbit Design System",
+      "subtitle": "Case Study",
+      "body": "Three separate product teams were shipping inconsistent UIs. I audited 1,200+ components across codebases, distilled them into 60 primitives, and introduced a Figma token pipeline that kept design and code in sync automatically. Adoption went from 0 to 100% across all products in six weeks, cutting design-to-dev handoff time by half."
+    },
+    {
+      "title": "PulseMetrics",
+      "subtitle": "Case Study",
+      "body": "Indie makers were drowning in tabs — Stripe dashboard, Paddle reports, spreadsheets. I built a unified ingestion layer that normalises revenue events across providers into a single schema, then layered Recharts visualisations on top. The hardest part was reconciling timezone-offset discrepancies in Paddle's legacy webhook payloads — a bug that took three days to isolate and one line to fix."
+    }
+  ],
+  "bio": [
+    "6+ years building production web applications",
+    "Comfortable across the full stack — from PostgreSQL schemas to CSS animations",
+    "Former lead engineer at a Series B fintech startup",
+    "Open-source contributor with 1,400+ GitHub stars across personal projects",
+    "Based in Berlin, available for remote collaboration worldwide"
+  ],
+  "skills-technologies": [
+    {
+      "name": "TypeScript",
+      "detail": "strongly-typed codebases that scale without surprises"
+    },
+    {
+      "name": "React & Next.js",
+      "detail": "server components, App Router, and everything in between"
+    },
+    {
+      "name": "Node.js & Express",
+      "detail": "RESTful APIs and real-time services with WebSockets"
+    },
+    {
+      "name": "PostgreSQL & Prisma",
+      "detail": "relational data modelling and type-safe query layers"
+    },
+    {
+      "name": "Tailwind CSS",
+      "detail": "utility-first styling with a consistent design system"
+    },
+    {
+      "name": "GraphQL & Apollo",
+      "detail": "flexible data-fetching for complex client needs"
+    },
+    {
+      "name": "Docker & CI/CD",
+      "detail": "containerised deployments and automated pipelines on GitHub Actions"
+    },
+    {
+      "name": "Figma",
+      "detail": "high-fidelity prototyping and design-to-code handoff"
+    },
+    {
+      "name": "Redis",
+      "detail": "caching layers and session management for high-traffic apps"
+    },
+    {
+      "name": "Vitest & Playwright",
+      "detail": "unit, integration, and end-to-end test coverage"
+    },
+    {
+      "name": "AWS (S3, Lambda, CloudFront)",
+      "detail": "serverless infrastructure and CDN delivery"
+    },
+    {
+      "name": "Framer Motion",
+      "detail": "physics-based animations that respect reduced-motion preferences"
+    }
+  ],
+  "experience": [
+    {
+      "period": "2023–Present",
+      "role": "Senior Full-Stack Engineer",
+      "company": "Vanta Labs",
+      "location": "Berlin",
+      "description": "Leading a team of four engineers rebuilding the core analytics platform in Next.js 14 and TypeScript. Reduced page load times by 62% and shipped a real-time dashboard used by 40,000+ daily active users."
+    },
+    {
+      "period": "2021–2023",
+      "role": "Lead Engineer",
+      "company": "Kova Finance",
+      "location": "London, remote",
+      "description": "Architected the transaction processing API handling €2M+ in daily volume. Introduced a typed GraphQL layer that cut front-end bug reports by 45% in the first quarter after launch."
+    },
+    {
+      "period": "2019–2021",
+      "role": "Front-End Developer",
+      "company": "Studio Nox",
+      "location": "Berlin",
+      "description": "Built interactive marketing sites and web apps for clients including Adidas, N26, and a handful of Berlin-based Series A startups. Championed accessibility standards across every project."
+    },
+    {
+      "period": "2018–2019",
+      "role": "Junior Developer",
+      "company": "Freelance",
+      "location": "Remote",
+      "description": "Delivered twelve client projects spanning e-commerce, SaaS dashboards, and editorial platforms. Learned to scope, ship, and iterate fast under real-world constraints."
+    },
+    {
+      "period": "2014–2018",
+      "role": "B.Sc. Computer Science",
+      "company": "Technische Universität Berlin",
+      "location": "Berlin",
+      "description": "Graduated with distinction. Thesis on optimising graph traversal algorithms for social network recommendation engines."
+    }
+  ],
+  "contact-form": [
+    {
+      "label": "Name",
+      "placeholder": "Your full name or organisation",
+      "required": true
+    },
+    {
+      "label": "Email",
+      "placeholder": "A valid email address where I can reach you",
+      "required": true
+    },
+    {
+      "label": "Subject",
+      "placeholder": "e.g. Freelance project inquiry, Collaboration idea, Just saying hi",
+      "required": true
+    },
+    {
+      "label": "Message",
+      "placeholder": "Tell me about your project, timeline, budget, or anything else relevant — the more detail, the better",
+      "required": true
+    },
+    {
+      "label": "Send Message",
+      "placeholder": "",
+      "required": false
+    }
+  ],
+  "social-links": [
+    {
+      "platform": "GitHub",
+      "handle": "github.com/alexmorrow",
+      "url": "https://github.com/alexmorrow",
+      "description": "Browse my open-source projects, contributions, and code experiments"
+    },
+    {
+      "platform": "LinkedIn",
+      "handle": "linkedin.com/in/alexmorrow",
+      "url": "https://linkedin.com/in/alexmorrow",
+      "description": "Professional background, endorsements, and career updates"
+    },
+    {
+      "platform": "Twitter / X",
+      "handle": "@alexmorrow_dev",
+      "url": "https://twitter.com/alexmorrow_dev",
+      "description": "Thoughts on software, design, and the occasional hot take"
+    },
+    {
+      "platform": "Dribbble",
+      "handle": "dribbble.com/alexmorrow",
+      "url": "https://dribbble.com/alexmorrow",
+      "description": "UI concepts, design explorations, and visual side projects"
+    },
+    {
+      "platform": "Email",
+      "handle": "hello@alexmorrow.dev",
+      "url": "mailto:hello@alexmorrow.dev",
+      "description": "Drop me a direct line anytime"
+    }
+  ],
+  "footer": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Projects",
+      "href": "/projects"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "© 2024 Alex Morris. All rights reserved.",
+      "href": ""
+    },
+    {
+      "label": "Designed & built with Next.js, TypeScript, and Tailwind CSS.",
+      "href": ""
+    }
+  ]
+}
