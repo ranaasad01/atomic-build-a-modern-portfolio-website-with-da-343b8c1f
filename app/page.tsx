@@ -150,15 +150,9 @@ export default function HomePage() {
     <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <Reveal>
-        <section
-          id="home"
-          className="relative min-h-[92vh] flex items-center overflow-hidden px-6 md:px-12 lg:px-24 pt-28 pb-20"
-        >
+        <section id="home" className="relative min-h-[92vh] flex items-center overflow-hidden px-6 md:px-12 lg:px-24 pt-28 pb-20">
           {/* Background mesh */}
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute inset-0 -z-10"
-          >
+          <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
             <div className="absolute top-[-10%] left-[10%] h-[520px] w-[520px] rounded-full bg-[var(--accent)]/10 blur-[120px]" />
             <div className="absolute bottom-[5%] right-[5%] h-[360px] w-[360px] rounded-full bg-[var(--accent)]/6 blur-[100px]" />
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_60%_0%,var(--accent)/4,transparent_70%)]" />
@@ -167,12 +161,7 @@ export default function HomePage() {
           <div className="mx-auto w-full max-w-6xl">
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-16 items-center">
               {/* Left: copy */}
-              <motion.div
-                variants={heroVariants}
-                initial="hidden"
-                animate="visible"
-                className="space-y-8"
-              >
+              <motion.div variants={heroVariants} initial="hidden" animate="visible" className="space-y-8">
                 {/* Status pill */}
                 <motion.div variants={heroLine}>
                   <span className="inline-flex items-center gap-2 rounded-full border border-[var(--accent)]/30 bg-[var(--accent)]/8 px-4 py-1.5 text-sm font-medium text-[var(--accent)]">
@@ -195,127 +184,62 @@ export default function HomePage() {
                 </motion.div>
 
                 {/* Subhead */}
-                <motion.p
-                  variants={heroLine}
-                  className="max-w-xl text-lg leading-relaxed text-[var(--muted-foreground)] text-pretty"
-                >
-                  {t_hero_subtitle} I specialize in TypeScript, React, and
-                  Node.js — building products that are fast, accessible, and
-                  genuinely enjoyable to use.
-                </motion.p>
+                <motion.p variants={heroLine} className="max-w-xl text-lg leading-relaxed text-[var(--muted-foreground)] text-pretty">I build digital experiences worth remembering. With deep expertise in TypeScript, React, and Node.js, I deliver products that are performant, inclusive, and a genuine pleasure to use.</motion.p>
 
                 {/* Location */}
-                <motion.div
-                  variants={heroLine}
-                  className="flex items-center gap-2 text-sm text-[var(--muted-foreground)]"
-                >
+                <motion.div variants={heroLine} className="flex items-center gap-2 text-sm text-[var(--muted-foreground)]">
                   <MapPin className="h-4 w-4 text-[var(--accent)]" aria-hidden="true" />
                   {t_hero_location}
                 </motion.div>
 
                 {/* CTAs */}
-                <motion.div
-                  variants={heroLine}
-                  className="flex flex-wrap gap-4 pt-2"
-                >
-                  <Link
-                    href="/projects"
-                    className="inline-flex items-center gap-2 rounded-xl bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-[var(--accent-foreground)] shadow-[0_0_24px_var(--accent)/30] transition-all duration-300 hover:brightness-110 hover:shadow-[0_0_36px_var(--accent)/50] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
-                  >
-                    {t_hero_cta_primary}
-                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
-                  </Link>
-                  <Link
-                    href="/contact"
-                    className="inline-flex items-center gap-2 rounded-xl border border-[var(--border)] bg-[var(--card)] px-6 py-3 text-sm font-semibold text-[var(--foreground)] transition-all duration-300 hover:border-[var(--accent)]/50 hover:bg-[var(--card-hover)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
-                  >
+                <motion.div variants={heroLine} className="flex flex-wrap gap-4 pt-2">
+                  <Link href="/projects" className="inline-flex items-center gap-2 rounded-xl bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-[var(--accent-foreground)] shadow-[0_0_24px_var(--accent)/30] transition-all duration-300 hover:brightness-110 hover:shadow-[0_0_36px_var(--accent)/50] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]">Projects</Link>
+                  <Link href="/contact" className="inline-flex items-center gap-2 rounded-xl border border-[var(--border)] bg-[var(--card)] px-6 py-3 text-sm font-semibold text-[var(--foreground)] transition-all duration-300 hover:border-[var(--accent)]/50 hover:bg-[var(--card-hover)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]">
                     {t_hero_cta_secondary}
                   </Link>
                 </motion.div>
 
                 {/* Social links */}
                 <motion.div variants={heroLine} className="flex items-center gap-4 pt-1">
-                  <a
-                    href="https://github.com/alexmorrow"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub"
-                    className="rounded-lg p-2 text-[var(--muted-foreground)] transition-colors hover:text-[var(--foreground)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
-                  >
+                  <a href="https://github.com/alexmorrow" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="rounded-lg p-2 text-[var(--muted-foreground)] transition-colors hover:text-[var(--foreground)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]">
                     <Github className="h-5 w-5" aria-hidden="true" />
                   </a>
-                  <a
-                    href="https://linkedin.com/in/alexmorrow"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn"
-                    className="rounded-lg p-2 text-[var(--muted-foreground)] transition-colors hover:text-[var(--foreground)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
-                  >
+                  <a href="https://linkedin.com/in/alexmorrow" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="rounded-lg p-2 text-[var(--muted-foreground)] transition-colors hover:text-[var(--foreground)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]">
                     <Linkedin className="h-5 w-5" aria-hidden="true" />
                   </a>
-                  <a
-                    href="https://twitter.com/alexmorrow_dev"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Twitter"
-                    className="rounded-lg p-2 text-[var(--muted-foreground)] transition-colors hover:text-[var(--foreground)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
-                  >
+                  <a href="https://twitter.com/alexmorrow_dev" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="rounded-lg p-2 text-[var(--muted-foreground)] transition-colors hover:text-[var(--foreground)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]">
                     <Twitter className="h-5 w-5" aria-hidden="true" />
                   </a>
-                  <a
-                    href={`mailto:${BRAND.email}`}
-                    aria-label="Email"
-                    className="rounded-lg p-2 text-[var(--muted-foreground)] transition-colors hover:text-[var(--foreground)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
-                  >
+                  <a href={`mailto:${BRAND.email}`} aria-label="Email" className="rounded-lg p-2 text-[var(--muted-foreground)] transition-colors hover:text-[var(--foreground)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]">
                     <Mail className="h-5 w-5" aria-hidden="true" />
                   </a>
                 </motion.div>
               </motion.div>
 
               {/* Right: stats card */}
-              <motion.div
-                variants={slideInRight}
-                initial="hidden"
-                animate="visible"
-                className="hidden lg:grid grid-cols-2 gap-4 w-72"
-              >
-                {STATS.map((stat) => (
-                  <motion.div
-                    key={stat.label}
-                    whileHover={{ y: -4, scale: 1.03 }}
-                    transition={{ duration: 0.25, ease: "easeOut" }}
-                    className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-5 shadow-[0_1px_2px_rgba(0,0,0,0.12),0_8px_24px_-8px_rgba(0,0,0,0.3)] flex flex-col gap-1"
-                  >
-                    <span className="text-3xl font-bold text-[var(--accent)]">
-                      {stat.value}
-                    </span>
-                    <span className="text-xs text-[var(--muted-foreground)] leading-snug">
-                      {stat.label}
-                    </span>
-                  </motion.div>
-                ))}
+              <motion.div variants={slideInRight} initial="hidden" animate="visible" className="hidden lg:grid grid-cols-2 gap-4 w-72">
+                {STATS.map((stat) => (<motion.div key={stat.label} whileHover={{ y: -4, scale: 1.03 }} transition={{ duration: 0.25, ease: "easeOut" }} className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-5 shadow-[0_1px_2px_rgba(0,0,0,0.12),0_8px_24px_-8px_rgba(0,0,0,0.3)] flex flex-col gap-1">
+                  <span className="text-3xl font-bold text-[var(--accent)]">
+                    {stat.value}
+                  </span>
+                  <span className="text-xs text-[var(--muted-foreground)] leading-snug">
+                    {stat.label}
+                  </span>
+                </motion.div>))}
               </motion.div>
             </div>
 
             {/* Scroll hint */}
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1.4, duration: 0.6 }}
-              className="mt-16 text-xs tracking-widest uppercase text-[var(--muted-foreground)]/60 text-center"
-            >
+            <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.4, duration: 0.6 }} className="mt-16 text-xs tracking-widest uppercase text-[var(--muted-foreground)]/60 text-center">
               {t_hero_scroll}
             </motion.p>
           </div>
         </section>
       </Reveal>
-
       {/* ── FEATURED PROJECTS ────────────────────────────────────────────── */}
       <Reveal>
-        <section
-          id="projects"
-          className="px-6 md:px-12 lg:px-24 py-24 md:py-32"
-        >
+        <section id="projects" className="px-6 md:px-12 lg:px-24 py-24 md:py-32">
           <div className="mx-auto max-w-6xl space-y-14">
             {/* Header */}
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
@@ -327,10 +251,7 @@ export default function HomePage() {
                   Projects I'm proud of
                 </h2>
               </div>
-              <Link
-                href="/projects"
-                className="inline-flex items-center gap-2 text-sm font-medium text-[var(--muted-foreground)] transition-colors hover:text-[var(--foreground)] shrink-0"
-              >
+              <Link href="/projects" className="inline-flex items-center gap-2 text-sm font-medium text-[var(--muted-foreground)] transition-colors hover:text-[var(--foreground)] shrink-0">
                 All projects
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
@@ -340,29 +261,16 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Large featured card */}
               <Reveal delay={0.05} className="md:row-span-2">
-                <motion.article
-                  whileHover={{ y: -6 }}
-                  transition={{ duration: 0.3, ease: "easeOut" }}
-                  className="group h-full rounded-2xl border border-[var(--border)] bg-[var(--card)] overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.1),0_8px_32px_-8px_rgba(0,0,0,0.35)] flex flex-col"
-                >
+                <motion.article whileHover={{ y: -6 }} transition={{ duration: 0.3, ease: "easeOut" }} className="group h-full rounded-2xl border border-[var(--border)] bg-[var(--card)] overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.1),0_8px_32px_-8px_rgba(0,0,0,0.35)] flex flex-col">
                   <div className="relative h-64 md:h-80 overflow-hidden bg-[var(--card-hover)]">
-                    <img
-                      src={FEATURED_PROJECTS[0].image}
-                      alt={FEATURED_PROJECTS[0].title}
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
+                    <img src={FEATURED_PROJECTS[0].image} alt={FEATURED_PROJECTS[0].title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div className="absolute inset-0 bg-gradient-to-t from-[var(--card)]/80 to-transparent" />
                   </div>
                   <div className="flex flex-col flex-1 p-7 gap-4">
                     <div className="flex flex-wrap gap-2">
-                      {FEATURED_PROJECTS[0].tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="rounded-full bg-[var(--accent)]/10 px-3 py-0.5 text-xs font-medium text-[var(--accent)]"
-                        >
-                          {tag}
-                        </span>
-                      ))}
+                      {FEATURED_PROJECTS[0].tags.map((tag) => (<span key={tag} className="rounded-full bg-[var(--accent)]/10 px-3 py-0.5 text-xs font-medium text-[var(--accent)]">
+                        {tag}
+                      </span>))}
                     </div>
                     <h3 className="text-2xl font-bold text-[var(--foreground)]">
                       {FEATURED_PROJECTS[0].title}
@@ -370,12 +278,7 @@ export default function HomePage() {
                     <p className="text-[var(--muted-foreground)] leading-relaxed flex-1">
                       {FEATURED_PROJECTS[0].description}
                     </p>
-                    <a
-                      href={FEATURED_PROJECTS[0].link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--accent)] transition-colors hover:text-[var(--accent)]/80"
-                    >
+                    <a href={FEATURED_PROJECTS[0].link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--accent)] transition-colors hover:text-[var(--accent)]/80">
                       <Eye className="h-4 w-4" aria-hidden="true" />
                       View project
                     </a>
@@ -386,29 +289,16 @@ export default function HomePage() {
               {/* Two smaller cards */}
               {FEATURED_PROJECTS.slice(1).map((project, i) => (
                 <Reveal key={project.id} delay={0.1 + i * 0.08}>
-                  <motion.article
-                    whileHover={{ y: -4 }}
-                    transition={{ duration: 0.3, ease: "easeOut" }}
-                    className="group rounded-2xl border border-[var(--border)] bg-[var(--card)] overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.1),0_8px_24px_-8px_rgba(0,0,0,0.3)] flex flex-col"
-                  >
+                  <motion.article whileHover={{ y: -4 }} transition={{ duration: 0.3, ease: "easeOut" }} className="group rounded-2xl border border-[var(--border)] bg-[var(--card)] overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.1),0_8px_24px_-8px_rgba(0,0,0,0.3)] flex flex-col">
                     <div className="relative h-44 overflow-hidden bg-[var(--card-hover)]">
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
+                      <img src={project.image} alt={project.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                       <div className="absolute inset-0 bg-gradient-to-t from-[var(--card)]/70 to-transparent" />
                     </div>
                     <div className="flex flex-col flex-1 p-6 gap-3">
                       <div className="flex flex-wrap gap-2">
-                        {project.tags.slice(0, 3).map((tag) => (
-                          <span
-                            key={tag}
-                            className="rounded-full bg-[var(--accent)]/10 px-3 py-0.5 text-xs font-medium text-[var(--accent)]"
-                          >
-                            {tag}
-                          </span>
-                        ))}
+                        {project.tags.slice(0, 3).map((tag) => (<span key={tag} className="rounded-full bg-[var(--accent)]/10 px-3 py-0.5 text-xs font-medium text-[var(--accent)]">
+                          {tag}
+                        </span>))}
                       </div>
                       <h3 className="text-xl font-bold text-[var(--foreground)]">
                         {project.title}
@@ -416,12 +306,7 @@ export default function HomePage() {
                       <p className="text-sm text-[var(--muted-foreground)] leading-relaxed flex-1">
                         {project.description}
                       </p>
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--accent)] transition-colors hover:text-[var(--accent)]/80"
-                      >
+                      <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--accent)] transition-colors hover:text-[var(--accent)]/80">
                         <Eye className="h-4 w-4" aria-hidden="true" />
                         View project
                       </a>
@@ -433,13 +318,9 @@ export default function HomePage() {
           </div>
         </section>
       </Reveal>
-
       {/* ── SERVICES ─────────────────────────────────────────────────────── */}
       <Reveal>
-        <section
-          id="services"
-          className="px-6 md:px-12 lg:px-24 py-24 md:py-32 bg-[var(--section-tint)]"
-        >
+        <section id="services" className="px-6 md:px-12 lg:px-24 py-24 md:py-32 bg-[var(--section-tint)]">
           <div className="mx-auto max-w-6xl space-y-14">
             <div className="max-w-xl space-y-3">
               <span className="text-xs font-semibold tracking-widest uppercase text-[var(--accent)]">
@@ -460,11 +341,7 @@ export default function HomePage() {
                 const Icon = service.icon;
                 return (
                   <Reveal key={service.title} delay={i * 0.08}>
-                    <motion.div
-                      whileHover={{ y: -4 }}
-                      transition={{ duration: 0.25, ease: "easeOut" }}
-                      className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-7 shadow-[0_1px_2px_rgba(0,0,0,0.08),0_8px_24px_-8px_rgba(0,0,0,0.25)] flex flex-col gap-4"
-                    >
+                    <motion.div whileHover={{ y: -4 }} transition={{ duration: 0.25, ease: "easeOut" }} className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-7 shadow-[0_1px_2px_rgba(0,0,0,0.08),0_8px_24px_-8px_rgba(0,0,0,0.25)] flex flex-col gap-4">
                       <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[var(--accent)]/12 text-[var(--accent)]">
                         <Icon className="h-5 w-5" aria-hidden="true" />
                       </div>
@@ -482,13 +359,9 @@ export default function HomePage() {
           </div>
         </section>
       </Reveal>
-
       {/* ── SKILLS ───────────────────────────────────────────────────────── */}
       <Reveal>
-        <section
-          id="skills"
-          className="px-6 md:px-12 lg:px-24 py-24 md:py-32"
-        >
+        <section id="skills" className="px-6 md:px-12 lg:px-24 py-24 md:py-32">
           <div className="mx-auto max-w-6xl">
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-16 items-start">
               {/* Left */}
@@ -509,58 +382,36 @@ export default function HomePage() {
                     "Type-safe from database to UI",
                     "Accessibility baked in, not bolted on",
                     "Performance measured, not assumed",
-                  ].map((point) => (
-                    <li key={point} className="flex items-start gap-2">
-                      <Check
-                        className="mt-0.5 h-4 w-4 shrink-0 text-[var(--accent)]"
-                        aria-hidden="true"
-                      />
-                      {point}
-                    </li>
-                  ))}
+                  ].map((point) => (<li key={point} className="flex items-start gap-2">
+                    <Check
+                      className="mt-0.5 h-4 w-4 shrink-0 text-[var(--accent)]"
+                      aria-hidden="true"
+                    />
+                    {point}
+                  </li>))}
                 </ul>
-                <Link
-                  href="/about"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-[var(--accent)] transition-colors hover:text-[var(--accent)]/80"
-                >
+                <Link href="/about" className="inline-flex items-center gap-2 text-sm font-medium text-[var(--accent)] transition-colors hover:text-[var(--accent)]/80">
                   More about me
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </Link>
               </div>
 
               {/* Right: skill pills */}
-              <motion.div
-                variants={staggerContainer}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-80px" }}
-                className="flex flex-wrap gap-3"
-              >
-                {SKILLS.map((skill) => (
-                  <motion.span
-                    key={skill.label}
-                    variants={scaleIn}
-                    whileHover={{ scale: 1.06 }}
-                    className="rounded-full border border-[var(--border)] bg-[var(--card)] px-4 py-2 text-sm font-medium text-[var(--foreground)] shadow-[0_1px_2px_rgba(0,0,0,0.08)] transition-colors hover:border-[var(--accent)]/40 hover:text-[var(--accent)] cursor-default"
-                  >
-                    {skill.label}
-                    <span className="ml-2 text-xs text-[var(--muted-foreground)]">
-                      {skill.category}
-                    </span>
-                  </motion.span>
-                ))}
+              <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="flex flex-wrap gap-3">
+                {SKILLS.map((skill) => (<motion.span key={skill.label} variants={scaleIn} whileHover={{ scale: 1.06 }} className="rounded-full border border-[var(--border)] bg-[var(--card)] px-4 py-2 text-sm font-medium text-[var(--foreground)] shadow-[0_1px_2px_rgba(0,0,0,0.08)] transition-colors hover:border-[var(--accent)]/40 hover:text-[var(--accent)] cursor-default">
+                  {skill.label}
+                  <span className="ml-2 text-xs text-[var(--muted-foreground)]">
+                    {skill.category}
+                  </span>
+                </motion.span>))}
               </motion.div>
             </div>
           </div>
         </section>
       </Reveal>
-
       {/* ── TESTIMONIALS ─────────────────────────────────────────────────── */}
       <Reveal>
-        <section
-          id="testimonials"
-          className="px-6 md:px-12 lg:px-24 py-24 md:py-32 bg-[var(--section-tint)]"
-        >
+        <section id="testimonials" className="px-6 md:px-12 lg:px-24 py-24 md:py-32 bg-[var(--section-tint)]">
           <div className="mx-auto max-w-6xl space-y-14">
             <div className="text-center space-y-3 max-w-xl mx-auto">
               <span className="text-xs font-semibold tracking-widest uppercase text-[var(--accent)]">
@@ -574,11 +425,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {TESTIMONIALS.map((t, i) => (
                 <Reveal key={t.name} delay={i * 0.1}>
-                  <motion.figure
-                    whileHover={{ y: -4 }}
-                    transition={{ duration: 0.25, ease: "easeOut" }}
-                    className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-7 shadow-[0_1px_2px_rgba(0,0,0,0.08),0_8px_24px_-8px_rgba(0,0,0,0.25)] flex flex-col gap-5"
-                  >
+                  <motion.figure whileHover={{ y: -4 }} transition={{ duration: 0.25, ease: "easeOut" }} className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-7 shadow-[0_1px_2px_rgba(0,0,0,0.08),0_8px_24px_-8px_rgba(0,0,0,0.25)] flex flex-col gap-5">
                     {/* Stars */}
                     <div className="flex gap-1" aria-label="5 stars">
                       {Array.from({ length: 5 }).map((_, si) => (
@@ -593,11 +440,7 @@ export default function HomePage() {
                       &ldquo;{t.quote}&rdquo;
                     </blockquote>
                     <figcaption className="flex items-center gap-3">
-                      <img
-                        src={t.avatar}
-                        alt={t.name}
-                        className="h-10 w-10 rounded-full object-cover ring-2 ring-[var(--border)]"
-                      />
+                      <img src={t.avatar} alt={t.name} className="h-10 w-10 rounded-full object-cover ring-2 ring-[var(--border)]" />
                       <div>
                         <p className="text-sm font-semibold text-[var(--foreground)]">
                           {t.name}
@@ -614,24 +457,13 @@ export default function HomePage() {
           </div>
         </section>
       </Reveal>
-
       {/* ── CTA ──────────────────────────────────────────────────────────── */}
       <Reveal>
-        <section
-          id="contact"
-          className="px-6 md:px-12 lg:px-24 py-24 md:py-32"
-        >
+        <section id="contact" className="px-6 md:px-12 lg:px-24 py-24 md:py-32">
           <div className="mx-auto max-w-3xl">
-            <motion.div
-              whileHover={{ scale: 1.005 }}
-              transition={{ duration: 0.3, ease: "easeOut" }}
-              className="relative rounded-3xl border border-[var(--accent)]/20 bg-[var(--card)] p-12 md:p-16 text-center overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.1),0_16px_48px_-12px_rgba(0,0,0,0.4)]"
-            >
+            <motion.div whileHover={{ scale: 1.005 }} transition={{ duration: 0.3, ease: "easeOut" }} className="relative rounded-3xl border border-[var(--accent)]/20 bg-[var(--card)] p-12 md:p-16 text-center overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.1),0_16px_48px_-12px_rgba(0,0,0,0.4)]">
               {/* Glow */}
-              <div
-                aria-hidden="true"
-                className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_50%_0%,var(--accent)/12,transparent_70%)]"
-              />
+              <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_50%_0%,var(--accent)/12,transparent_70%)]" />
 
               <div className="space-y-6">
                 <span className="inline-block rounded-full border border-[var(--accent)]/30 bg-[var(--accent)]/8 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-[var(--accent)]">
@@ -645,17 +477,11 @@ export default function HomePage() {
                   always open. I respond within 24 hours.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 pt-2">
-                  <Link
-                    href="/contact"
-                    className="inline-flex items-center gap-2 rounded-xl bg-[var(--accent)] px-7 py-3.5 text-sm font-semibold text-[var(--accent-foreground)] shadow-[0_0_24px_var(--accent)/30] transition-all duration-300 hover:brightness-110 hover:shadow-[0_0_40px_var(--accent)/50] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
-                  >
+                  <Link href="/contact" className="inline-flex items-center gap-2 rounded-xl bg-[var(--accent)] px-7 py-3.5 text-sm font-semibold text-[var(--accent-foreground)] shadow-[0_0_24px_var(--accent)/30] transition-all duration-300 hover:brightness-110 hover:shadow-[0_0_40px_var(--accent)/50] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]">
                     Start a conversation
                     <ArrowRight className="h-4 w-4" aria-hidden="true" />
                   </Link>
-                  <a
-                    href={`mailto:${BRAND.email}`}
-                    className="inline-flex items-center gap-2 rounded-xl border border-[var(--border)] bg-transparent px-7 py-3.5 text-sm font-semibold text-[var(--foreground)] transition-all duration-300 hover:border-[var(--accent)]/50 hover:bg-[var(--card-hover)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
-                  >
+                  <a href={`mailto:${BRAND.email}`} className="inline-flex items-center gap-2 rounded-xl border border-[var(--border)] bg-transparent px-7 py-3.5 text-sm font-semibold text-[var(--foreground)] transition-all duration-300 hover:border-[var(--accent)]/50 hover:bg-[var(--card-hover)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]">
                     <Mail className="h-4 w-4" aria-hidden="true" />
                     {BRAND.email}
                   </a>
