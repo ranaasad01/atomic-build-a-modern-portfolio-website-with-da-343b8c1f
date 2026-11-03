@@ -180,7 +180,8 @@ export default function HomePage() {
                     <span
                       className="block text-[var(--accent)]"
                       style={{
-                        color: "#ef4444"
+                        color: "#ef4444",
+                        backgroundColor: "#ffffff"
                       }}>
                       &amp; Designer.
                     </span>
