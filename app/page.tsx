@@ -177,7 +177,11 @@ export default function HomePage() {
                   </p>
                   <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] text-balance text-[var(--foreground)]">
                     {t_hero_title}
-                    <span className="block text-[var(--accent)]">
+                    <span
+                      className="block text-[var(--accent)]"
+                      style={{
+                        color: "#ef4444"
+                      }}>
                       &amp; Designer.
                     </span>
                   </h1>
